@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وب سایت کریتی</title>
+    <link rel="stylesheet" href="../static/style_sobhan.css">
+    <link rel="icon" type="image/png" href="../static/KoritiWeb.png">
+</head>
+
+<body>
+
+    <nav class="site-header">
+        <div class="header-container">
+
+            <button class="menu-toggle" aria-label="باز کردن منو">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="main-nav">
+                <li><a href="{{url_for('home')}}" class="nav-links">صفحه اصلی</a></li>
+                <li><a href="{{url_for('about_us')}}" class="nav-links">درباره ما</a></li>
+                <li><a href="{{url_for('contant')}}" class="nav-links">تماس با ما</a></li>
+            </ul>
+
+            <div class="logo">KoritiWeb</div>
+
+        </div>
+    </nav>
+
+    <div class="menu-overlay"></div>
+
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    <footer class="site-footer" data-theme="light">
+
+        <h3>Koritiweb</h3>
+
+        <p class="footer-title">
+            مرجع اطلاعات و منابع کاربردی برنامه‌نویسی
+        </p>
+
+        <p class="footer-description">
+            مطالبی درباره زبان‌ها، فناوری‌ها و حوزه‌های مختلف برنامه‌نویسی
+        </p>
+
+        <div class="footer-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+        </div>
+
+        <div class="footer-links">
+            <a href="{{url_for('home')}}">صفحه اصلی</a>
+            <a href="{{url_for('about_us')}}">درباره ما</a>
+            <a href="{{url_for('contant')}}">تماس با ما</a>
+        </div>
+
+        <span class="footer-line"></span>
+
+        <p class="creator">
+            ساخته‌شده برای دسترسی ساده‌تر به اطلاعات برنامه‌نویسی
+        </p>
+
+        <p class="copyright">
+            © 2026 Koritiweb
+        </p>
+
+    </footer>
+
+    <script src="../static/sobhan.js"></script>
+
+</body>
+</html>
