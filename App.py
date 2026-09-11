@@ -5,6 +5,10 @@ from dotenv import load_dotenv
 
 app = Flask(__name__)
 
+@app.route("/health")
+def health():
+    return "OK", 200
+
 load_dotenv("api.env")
 
 WORKER_URL = "https://koriti-telegram.sobhnsani.workers.dev/"
