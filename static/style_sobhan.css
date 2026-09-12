@@ -160,7 +160,7 @@ span{
 
 .title{
     position: relative;
-        background: url("../static/back.png") center/cover no-repeat;
+        background: url("../static/back.webp") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -219,7 +219,7 @@ span{
 @media screen and (min-width: 800px) {
     .title{
         position: relative;
-        background:  url("../static/back.png") center/cover no-repeat;
+        background:  url("../static/back.webp") center/cover no-repeat;
     }
 
     .section-title{
